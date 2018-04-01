@@ -7,14 +7,14 @@
 
 all:
 	make -C ./asm/
-	make -C ./vm/
+	make -C ./corewar/
 
 clean:
 	make clean -C ./asm/
-	make clean -C ./vm/
+	make clean -C ./corewar/
 
 fclean:
 	make fclean -C ./asm/
-	make fclean -C ./vm/
+	make fclean -C ./corewar/
 
 re : fclean all
