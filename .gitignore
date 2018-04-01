@@ -1,0 +1,33 @@
+*.o
+*.a
+*.out
+*.gcda
+*.gcno
+units
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+
+# IDE files #
+###################
+*~
+#*#
+*#
+\#*#
+\#*
+*.editorconfig
+.vscode

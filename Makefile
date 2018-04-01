@@ -1,36 +1,20 @@
 ##
 ## EPITECH PROJECT, 2017
-## Project =pname=
+## Makefile
 ## File description:
-## Build =pname= binary.
+## Makefile Corewar - ASM and VM
 ##
 
-CC	=	gcc
-
-CFLAGS	=	-Wextra -W -Wall -I ./include/
-
-LIB	=	-L lib/ -lmy -lprintf -ltools
-
-SRC	=	src/main.c
-
-OBJ	=	$(SRC:.c=.o)
-
-NAME	=	binary_name
-
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	make -C ./lib/
-	$(CC) $(OBJ) $(CFLAGS) $(LIB) -o $(NAME)
-	rm -f $(OBJ)
-	make clean -C ./lib/
+all:
+	make -C ./asm/
+	make -C ./vm/
 
 clean:
-	rm -f $(OBJ)
-	make clean -C ./lib/
+	make clean -C ./asm/
+	make clean -C ./vm/
 
-fclean: clean
-	rm -f $(NAME)
-	make fclean -C ./lib/
+fclean:
+	make fclean -C ./asm/
+	make fclean -C ./vm/
 
-re: fclean all
+re : fclean all
